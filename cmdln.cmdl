@@ -1,0 +1,58 @@
+/* please, emacs, use -*-C-*- mode for this one.
+
+  Command-line options of the marquard-fit program
+  december 1998 - Michiel Meeuwissen
+
+ */
+#define floatt double
+
+*c_q   q
+
+floatt  Kca = 3.0443904       "specify Kc"
+floatt  Kci = 0.2216546       "specify Kc"
+floatt  a1a =  -0.653
+floatt  a2a =  0.325
+floatt  a3a = 0.715
+floatt  a4a = 0
+floatt  a1i =  -0.653
+floatt  a2i =  0.325
+floatt  a3i = 0.715
+floatt  a4i = 0
+floatt  p1a = -.0226
+floatt  p1i = -.0226
+floatt  p2a = 0
+floatt  p2i = 0
+bool    fita1 = +
+bool    fita2 = +
+bool    fita3 = +
+bool    fita4 = -
+bool    fitKc = +            "if Kc should be fit"
+bool    fitnt = -
+floatt  yt = 1.585            "specify yt"
+floatt  yi = -0.81            "specify yi"
+floatt  nt  = 0
+int     minsystemsize = 4 m  "specify a minimum systemsize. Bigger systems will be ignored"
+floatt  sccr=3.0       s     "specify 'scaling width criterium'"
+floatt  deltaK=0.25    d     "how much K may differ from Kc"
+floatt  conv=0.2e-7          "halting criteria"
+bool    anisotropic = +      "wether the variables for anistropic or isotropic model should be used \n this can be switched by sending C"
+                            
+
+
+*c_f2 g
+
+floatt  conv=0.2e-7          "halting criteria"
+floatt  a0 = 0.6236          "starting value for a0"
+floatt  a1 = 0               "starting value for a1"
+floatt  a2 = -0.09             "starting value for a2"
+floatt  a3  = 0
+floatt  a4  = 0
+floatt  C   = -0.11
+bool    fita0 = +             "wether a0 should be fit"
+bool    fita1 = -             "wether a1 should be fit"
+bool    fita2 = +             "wether a2 should be fit"
+bool    fita3 = -             "wether a3 should be fit"
+bool    fita4 = +             "wether a4 should be fit"
+bool    fitC  = +             "wether C should be fit"
+bool    formC = -             "wether C in formula, this can be switched by sending C" 
+
